@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<style>
+div.shw { font-size:15;color:DarkMagenta;border-color:black;}
+</style>
+<script type="text/javascript" src="./jquery-1.7.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#para").click(function(){
+$("h6:hidden").show("slow").css("background-color","pink");
+});
+$("#para").click(function (){
+$("h6:visible").hide("slow").addClass("shw");
+$("#para").text("Press and Check Hidden Boxes");                         <!--visibility filters -->
+});
+}); 
+</script>
+<br><div id='para' style="cursor:pointer;color:DarkOliveGreen;font-weight:900px;">Click Here To Show Elements</div><br>
+<h6 style="font-size:12;width:60;height:30;border:2px solid;float:left;margin:0 3px;"> Hidden</h6>
+<h6 style="font-size:12;width:60;height:30;border:2px solid;border-color:Gold;float:left;margin:0 3px;">   Visible</h6>
+<h6 style="font-size:12;width:60;height:30;border:2px solid;float:left;margin:0 3px;">   Hidden</h6>
+<h6 style="font-size:12;width:60;height:30;border:2px solid;border-color:Gold;float:left;margin:0 3px;"> Visible</h6>
+<h6 style="font-size:12;width:60;height:30;border:2px solid;float:left;margin:0 3px;">Hidden</h6>
+<br><br><br>
+
+</body>
+</html>

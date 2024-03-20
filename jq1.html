@@ -1,0 +1,30 @@
+<!-- jquery--><html><head>
+  
+<style>  div,span {   width: 100px;    height: 40px;    float:left;   padding: 10px;    margin: 10px;    background-color: #EEEEEE;  }</style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+</head>
+<body>
+  <div>DIV</div>
+  <span>SPAN</span>
+  <p>P <button>Button</button></p>
+<script>
+var elementCount = $("*").length;
+$("body").prepend("<h3>" + elementCount + " elements found</h3>");</script> <!-- hmtl elemnts ..-->
+
+<!-- jquery selectors -->
+
+<div id="notMe">Div1</div> <!-- jquery  id selectors -->
+ <div class="myClass">Div2</div> <!-- jquery class selectors -->
+  <span class="myClass">Span1</span>
+  <p id="my">helo</p>
+  <span class="myClass">Span2</span>
+  
+<script>
+$(".myclass").css("border","3px solid red");
+$("#notMe").css("border","3px solid black");
+$("p").css("border","9px solid red");<!-- jquery tag selectors -->
+</script>
+
+</body>
+</html>

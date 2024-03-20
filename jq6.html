@@ -1,0 +1,48 @@
+<html>
+<head>
+<script type="text/javascript" src="./jquery-1.7.js"></script>
+<script type="text/javascript">
+function test1()
+{
+$('input[name^="query"]').val('jQuery').css('border','4px solid black');
+};
+
+
+function test2()
+{  $('Input[value*="kevin"]').css("background-color","red");
+}
+
+</script>
+</head>
+<body>
+<br>Name:<input name="query tutorial" /><br><br>    <!--starts with ^= ilter -->
+Username:<input name="query attribute" /><br><br>
+Password: <input name="starts with attribute" /><br><br>
+<input type="button"  value="Test" class="btntest" onClick="test1();"><br>
+
+
+
+
+
+
+<input name="newsletter" />  <!--ends with $= filter -->
+  <input name="milkman" />
+  <input name="job letter" />
+<script>$("input[name$='letter']").val("a letter");</script>
+
+
+<FORM action="registeration">
+<table style="font-size: 14px;font-family: arial, verdant, san-serif;padding-left:30px;">   <!-- with *= ilter -->
+<tr><td>Full Name</td><td align="center">:</td>
+<td><INPUT TYPE="text" NAME="name box" value="kevin andersen"/></td></tr>
+<tr><td>Password</td><td align="center">:</td>
+<td><INPUT TYPE="password" NAME="passwdbox" value="passpass"/></td></tr>
+<tr><td>Email</td><td align="center">:</td>
+<td><INPUT TYPE="text" NAME="email" value="kevinandersen@yahoo.com"/></td></tr>
+<tr><td><Input type="button" value="Test" onClick="test2();"></td>
+</table>
+</FORM>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html><head>  <!-- for each: in java sep codes while in jq only one style we use for this  -->
+<style>
+  ul { font-size:18px; margin:0; }
+  span { color:blue; text-decoration:underline; cursor:pointer; }
+  .example { font-style:italic; }
+  </style>
+  <script src="./jquery-1.7.js"></script>
+</head>
+<body>
+  To do list: <span>(click here to change)</span>  <!-- comp til list end -->
+  <ul>
+    <li>Eat</li>
+    <li>Sleep</li>
+    <li>Be merry</li>
+  </ul>
+<script>
+    $("span").click(function () {
+      $("li").each(function(){
+        $(this).toggleClass("example");
+      });
+    });
+</script>
+  <button>Change colors</button> 
+  <span>S1</span>
+  <div>D</div>  <div>D1</div>  <div>D2</div>  <div>D3</div> <!-- com starts frm parent div to al  ... if we want to break or stop in dm.. -->
+  <div id="stop">D4 Stop here</div>
+  <div>D5</div>  <div>D6</div>  <div>D7</div>
+<script>
+    $("button").click(function () {
+      $("div").each(function (index, domEle) {
+        $(domEle).css("backgroundColor", "yellow"); 
+        if ($(this).is("#stop")) {
+          $("span").text("Stopped at div index #" + index);
+          return false;        }
+      });
+    });
+</script>
+</body></html>

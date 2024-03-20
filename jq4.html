@@ -1,0 +1,41 @@
+<html> <head> 
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<script > 
+ $(document).ready(function() {   <!-- less than filter  -->
+ $('#clickme').click(function(){ 
+ var fav_quotes = $('li:lt(2)'); 
+ $(fav_quotes).css('color','orange'); 
+ }); 
+ });
+ 
+ </script>
+ <script type="text/javascript" language="javascript">
+     $(document).ready(function() {
+      $("li").eq(2).addClass("selected");
+   });
+  </script>
+   <style>
+      .selected { color:red; } </style> </head>
+
+</head> 
+<body> 
+ <ul> 
+ <li>Life is a great big canvas, and you should throw all the paint on it you can. ~ Danny Kaye</li> 
+ <li>Doing BETTER for today than yesterday. If tomorrow don't come to us,we already done our BEST.</li> 
+ <li>"The hardest thing in life is to know which bridge to cross & which to burn" ~David Russell</li> 
+ <li>"Sometimes you reach a point at which the fastest way to go forward is to slow down a bit"</li> 
+ </ul> 
+ <button id="clickme">Click Me!!! </button> 
+ 
+ <div>
+   <ul>
+     <li>list item 1</li>
+     <li>list item 2</li>
+     <li>list item 3</li>
+     <li>list item 4</li>
+     <li>list item 5</li>
+     <li>list item 6</li>
+   </ul>
+   </div>
+
+</body> </html>

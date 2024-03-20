@@ -1,0 +1,31 @@
+<html><head><style>
+ body { font-size:14px; }
+  form { border:2px green solid; padding:2px; margin:0;       background:#efe; }
+   div { color:red; }  fieldset { margin:1px; padding:3px; } </style>
+     <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <body><form>
+      <div>Form is surrounded by the green outline</div>
+	  <label>Child:</label> <input name="name" /> 
+	  <fieldset>  <label>Grandchild:</label> <input name="newsletter" />    </fieldset> </form>
+	 Sibling to form: <input name="none" />
+	 <script>$("form input").css("border", "2px dotted blue");</script> <!--desendants --> 
+	 
+	 
+	 
+	 
+	 <ul class="topnav">  <!--children --> 
+	    <li>Item 1</li>
+	    <li>Item 2   <ul><li>Nested item 1</li><li>Nested item 2</li><li>Nested item 3</li></ul> </li>
+	    <li>Item 3</li></ul>
+	  <script>$("ul.topnav > li").css("border", "3px double red");</script>
+	 
+	 
+	 <div id="hm">D1</div> <!-- siblings --> 
+	  <span id="prev">S1</span>
+	    <div>D3</div>
+	  <div>D4 <div id="small">D4</div></div>
+	  <span>S2</span>
+	    <div>D5</div>
+	  <script>$("#prev ~ span").css("border", "3px solid red");
+	  $("#hm ~ div").css("border", "3px solid blue")</script>
+	 </body></html>
